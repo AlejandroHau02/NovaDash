@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { LayoutDashboard, BarChart3, Users, Settings, LogOut } from "lucide-react";
+import { useAuth } from '../../context/AuthContext';
 
 const Sidebar = () => {
+    const { logout } = useAuth();
+
     const links = [
         { icon: LayoutDashboard, label: 'Dashboard', to: '/' },
         { icon: BarChart3, label: 'Estadísticas', to: '/stats' },
@@ -43,7 +46,9 @@ const Sidebar = () => {
 
             {/* Footer */}
             <div className="p-4 border-t border-[var(--border)]">
-                <button className="flex items-center gap-3 px-3 py-2 w-full text-[var(--text-muted)]
+                <button
+                    onClick={logout}
+                    className="flex items-center gap-3 px-3 py-2 w-full text-[var(--text-muted)]
                 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors">
                     <LogOut size={20} />
                     <span className="font-medium">Cerrar Sesión</span>
