@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
+import MainLayout from "./components/layout/MainLayout";
+
+//placeholder pages
+const Dashboard = () => (
+
+  <div className="space-y-6">
+    <h1 className="text-3xl font-bold text-[var(--text-main)]">Bienvenido a NovaDash</h1>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {[1, 2, 3].map((i) => (
+        <div key={i} className="card glass h-40 flex items-center justify-center">
+          <span className="text-lg font-medium text-[var(--text-muted)]">Tarjeta de Prueba {i}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+);
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="stats" element={<h1 className="text-2xl font-bold">Estadísticas</h1>} />
+            <Route path="users" element={<h1 className="text-2xl font-bold">Usuarios</h1>} />
+            <Route path="settings" element={<h1 className="text-2xl font-bold">Configuración</h1>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
