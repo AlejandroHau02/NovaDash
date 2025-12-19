@@ -1,16 +1,32 @@
-# React + Vite
+# QuickShop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mini eCommerce desarrollado con React, enfocado en la demostración de manejo de estado, componentes reutilizables y flujo de compra.
 
-Currently, two official plugins are available:
+## Demo en Vercel
+https://quickshop-iota.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funciones
+- Listado de productos
+- Vista de detalle de producto
+- Carrito de compras funcional
+- Persistencia del carrito con localStorage
+- Cálculo automático de total
+- Diseño responsive
+- Animaciones básicas de interfaz
 
-## React Compiler
+## Tecnologías
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Vercel (deploy)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Capturas
+<img width="1348" height="629" alt="image" src="https://github.com/user-attachments/assets/a71e5670-3311-48ca-959e-b21af0b71d93" />
+<img width="450" height="146" alt="image" src="https://github.com/user-attachments/assets/29457724-64e7-4a43-8481-ea73e915a139" />
+<img width="1365" height="635" alt="image" src="https://github.com/user-attachments/assets/2e05d4a8-f9c0-443f-87c8-170b1df10b68" />
+<img width="1364" height="632" alt="image" src="https://github.com/user-attachments/assets/53b5581d-05fb-476d-a81d-903796d57419" />
+<img width="1364" height="632" alt="image" src="https://github.com/user-attachments/assets/90ada1c7-9c6d-47eb-b5db-48590bb493fc" />
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-- Gracias por ver :D --
