@@ -1,32 +1,33 @@
-# QuickShop
+# NovaDash
 
-Mini eCommerce desarrollado con React, enfocado en la demostración de manejo de estado, componentes reutilizables y flujo de compra.
+Dashboard administrativo desarrollado con React, enfocado en la gestión de datos, visualización de métricas y autenticación simulada.
 
 ## Demo en Vercel
-https://quickshop-iota.vercel.app/
+https://nova-dash-ten.vercel.app/login
 
-## Funciones
-- Listado de productos
-- Vista de detalle de producto
-- Carrito de compras funcional
-- Persistencia del carrito con localStorage
-- Cálculo automático de total
+## Funcionalidades
+- Sistema de login simulado
+- Protección de rutas
+- Dashboard con métricas y estadísticas
+- Gráficas interactivas
+- CRUD completo (crear, actualizar y eliminar registros)
+- Tablas con búsqueda y paginación
 - Diseño responsive
-- Animaciones básicas de interfaz
+- Modo claro / oscuro
 
 ## Tecnologías
 - React
 - JavaScript
 - HTML5
 - CSS3
-- Vercel (deploy)
+- Librería de gráficas
+- Vercel
 
-## Capturas
-<img width="1348" height="629" alt="image" src="https://github.com/user-attachments/assets/a71e5670-3311-48ca-959e-b21af0b71d93" />
-<img width="450" height="146" alt="image" src="https://github.com/user-attachments/assets/29457724-64e7-4a43-8481-ea73e915a139" />
-<img width="1365" height="635" alt="image" src="https://github.com/user-attachments/assets/2e05d4a8-f9c0-443f-87c8-170b1df10b68" />
-<img width="1364" height="632" alt="image" src="https://github.com/user-attachments/assets/53b5581d-05fb-476d-a81d-903796d57419" />
-<img width="1364" height="632" alt="image" src="https://github.com/user-attachments/assets/90ada1c7-9c6d-47eb-b5db-48590bb493fc" />
-
-
--- Gracias por ver :D --
+# Capturas
+<img width="1365" height="635" alt="image" src="https://github.com/user-attachments/assets/85d7acc2-8928-45ed-8688-ec9cc0790767" />
+<img width="1348" height="329" alt="image" src="https://github.com/user-attachments/assets/9d3d82ba-3697-4102-8c40-c2255ab447aa" />
+<img width="1080" height="420" alt="image" src="https://github.com/user-attachments/assets/632371b5-6d71-4036-9dd3-fe79e5782306" />
+<img width="1359" height="633" alt="image" src="https://github.com/user-attachments/assets/5793a30d-2c75-473e-955f-504f20d872e0" />
+<img width="1364" height="631" alt="image" src="https://github.com/user-attachments/assets/6ba7035e-ddcb-4e44-960f-696597d3559c" />
+<img width="453" height="395" alt="image" src="https://github.com/user-attachments/assets/8441daf6-77b3-442d-a39e-35ff7ccb0409" />
+<img width="453" height="399" alt="image" src="https://github.com/user-attachments/assets/ec9861f1-9ac8-4afa-af22-642d6f31ffde" />
